@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shadow-cursor" id="shadowCursor"></div>
+
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo"><a href="index.html">Projeto SD/IC</a></div>
+                    <ul class="ul">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="autores.html">Autores</a></li>
+                        <li><a href="manual.html">Manual</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#"><button class="btn-gradiente">Vídeo tutorial</button></a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <img src="img/menuicon.png" alt="Ícone de menu" />
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container descricao-projeto">
+            <h1 class="titulo-projeto">Manual Prático de Montagem do Projeto</h1>
+        
+            <!-- Passo 1 -->
+            <section class="step descricao-item">
+                <div class="step-content">
+                    <h2 class="step-titulo">Passo 1: Preparação dos Componentes</h2>
+                    <p class="step-descricao">Realizando medições, cortes e ajustes necessários para garantir a precisão e a qualidade dos componentes do projeto.</p>
+                </div>
+                <div class="step-imagem-container">
+                    <img src="img/cortandocano.jpg" alt="Preparação dos componentes" class="step-imagem">
+                    <div class="hover-text">Preparando os componentes</div>
+                </div>
+            </section>
+        
+            <!-- Passo 2 -->
+            <section class="step descricao-item">
+                <div class="step-content">
+                    <h2 class="step-titulo">Passo 2: Conexão dos Componentes</h2>
+                    <p class="step-descricao">Conectando os componentes do Arduino conforme o esquema elétrico, garantindo que cada pino esteja corretamente posicionado para uma comunicação eficiente entre os módulos.</p>
+                </div>
+                <div class="step-imagem-container">
+                    <img src="img/montandoprotobord.jpg" alt="Conexão dos componentes" class="step-imagem">
+                    <div class="hover-text">Conectando os componentes</div>
+                </div>
+            </section>
+        
+            <!-- Passo 3 -->
+            <section class="step descricao-item">
+                <div class="step-content">
+                    <h2 class="step-titulo">Passo 3: Desenvolvimento do Código</h2>
+                    <p class="step-descricao">Desenvolvendo o código necessário para integrar todos os componentes e garantir o funcionamento adequado de todas as funcionalidades do projeto.</p>
+                </div>
+                <div class="step-imagem-container">
+                    <img src="img/codando.jpg" alt="Desenvolvimento do código" class="step-imagem">
+                    <div class="hover-text">Desenvolvendo o código</div>
+                </div>
+            </section>
+
+            <!-- Componentes e Suprimentos -->
+            <section class="componentes-e-suprimentos">
+                <h2>Componentes e Suprimentos Utilizados</h2>
+
+                <!-- Componente 1 -->
+                <section class="componenteesuprimento descricao-item">
+                    <h3>Fios e Conectores</h3>
+                    <p>Fios e conectores são essenciais para interligar a placa Arduino e outros dispositivos, como sensores e atuadores. Eles garantem conexões seguras e estáveis para o funcionamento do circuito.</p>
+                    <img src="img/fio.jpg" alt="Fios de Arduino">
+                </section>
+
+                <!-- Componente 2 -->
+                <section class="componenteesuprimento descricao-item">
+                    <h3>LEDs</h3>
+                    <p>O LED (Light Emitting Diode) emite luz quando a corrente elétrica passa por ele. No Arduino, é amplamente usado para indicar o status do sistema.</p>
+                    <img src="img/led.jpg" alt="LEDs">
+                </section>
+
+                <!-- Componente 3 -->
+                <section class="componenteesuprimento descricao-item">
+                    <h3>Tela LCD</h3>
+                    <p>A tela LCD exibe caracteres, símbolos e gráficos. Controlada pelo Arduino, é útil para mostrar mensagens ou variáveis em tempo real.</p>
+                    <img src="img/tela lcd.webp" alt="Tela LCD">
+                </section>
+
+                <!-- Componente 4 -->
+                <section class="componenteesuprimento descricao-item">
+                    <h3>Resistores</h3>
+                    <p>Resistores limitam a corrente elétrica em um circuito, protegendo os componentes sensíveis. Eles são essenciais para o controle de tensão e corrente.</p>
+                    <img src="img/resistor.webp" alt="Resistores">
+                </section>
+                
+                <section class="codigo-exemplo">
+                    <h3>Exemplo de Código: Função <code>retornaValor</code></h3>
+                    <pre><code>
+int retornaValor(int pino) {
+    if (analogRead(pino) >= sense) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+void setup() {
+    Serial.begin(9600);
+    lcd.init();
+    lcd.setBacklight(HIGH);
+    lcd.print("Hello World!");
+}
+                    </code></pre>
+                    <p>
+                        Acesse o código completo no repositório do GitHub: 
+                        <a href="https://github.com/mattkirzner/medidor-de-agua-inteligente/commit/a9a0ddd4e4041d878d4708749584178d0e01a154" target="_blank">
+                            Projeto no GitHub
+                        </a>.
+                    </p>
+                </section>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Medidor de Nível da Caixa D'Água</h3>
+                <p>Desenvolvido por estudantes do laboratório de Sistemas Digitais.</p>
+                <p>Uma solução inovadora para monitoramento de reservatórios.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Projeto SD/IC. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const footer = document.querySelector('footer');
+
+        footer.addEventListener('mouseover', () => {
+            footer.style.backgroundColor = '#aaaaaa'; 
+            footer.style.transform = 'scale(1.02)'; 
+            footer.querySelector('h3').style.transform = 'scale(1.1)'; 
+            footer.querySelectorAll('p').forEach(p => {
+                p.style.transform = 'scale(1.05)'; 
+            });
+        });
+
+        footer.addEventListener('mouseout', () => {
+            footer.style.backgroundColor = '#555555'; 
+            footer.style.transform = 'scale(1)'; 
+            footer.querySelector('h3').style.transform = 'scale(1)'; 
+            footer.querySelectorAll('p').forEach(p => {
+                p.style.transform = 'scale(1)'; 
+            });
+        });
+    </script>
+</body>
+</html>

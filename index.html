@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Tutorial</title>
+    <style>
+         .shadow-cursor {
+            position: absolute;
+            width: 10px; 
+            height: 10px; 
+            background-color: rgba(252, 249, 102, 0.842); 
+            border-radius: 50%; 
+            pointer-events: none; 
+            transition: transform 0.1s ease; 
+            filter: blur(3px); 
+            z-index: 9999; 
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shadow-cursor" id="shadowCursor"></div>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">Projeto SD/IC</a>
+                    </div>
+                    <ul class="ul">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="autores.html">Autores</a></li>
+                        <li><a href="manual.html">Manual</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=Gprj7569Mg4" target="_blank"><button class="btn-gradiente">Vídeo tutorial</button></a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <img src="img/menuicon.png" style="width: 70px; height: auto;" alt="ícone menu">
+                    </div>
+                </nav>
+            </div><!--container-->
+        </header><!--header-->
+        <main>
+            <div class="container">
+                <div class="main-text">
+                    <h1>Medidor de nível da caixa d'água</h1>
+                    <h2>Nunca mais fique sem água!</h2>
+                    <div>
+                        <li>
+                            <a href="codigo.zip/medidor-de-volume-inteligente.zip" download>
+                                <button class="btn-gradiente">BAIXAR CÓDIGO DO PROJETO</button>
+                            </a>
+                        </li>
+                    </div>
+                </div><!--main-text-->
+                <div class="main-img">
+                    <img src="img/fotointeirosemled.jpg" alt="Imagem redonda" style="width: 500px; height: 500px; border-radius: 50%; object-fit: cover; margin-left: 20px; margin-bottom: 20px; border: 10px solid white;">
+
+                </div>
+                </div><!--main-img-->
+            </div><!--container-->
+        </main><!--main-->
+    </div><!--background-->
+    
+    <section class="resultados">
+        <div class="container">
+            <div class="resultados-text">
+                Criamos um protótipo inovador que notifica você sempre que o nível da água no reservatório está baixo.
+            </div><!--resultado-text-->
+        </div><!--container-->
+    </section><!--resultados-->
+    
+    <section class="diferenciais">
+        <div class="container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div class="card" style="text-align: center; margin: 10px; border: 1px solid #ccc; padding: 20px;">
+                <img src="img/conectandofios.jpg" alt="segundo passo" style="display: block; margin: 0 auto; width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                <h3 class="titulo">Montando Protobord</h3>
+                <p>Conectando os primeiros fios<br>à protobord e ao notebook.</p>
+            </div>
+            <div class="card" style="text-align: center; margin: 10px; border: 1px solid #ccc; padding: 20px;">
+                <img src="img/fotoprontosemled.jpg" alt="segundo passo" style="display: block; margin: 0 auto; width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+
+                <h3 class="titulo">Testando com LED e sem LCD</h3>
+                <p>Testando o funcionamento apenas com leds.</p>
+            </div>
+            <div class="card" style="text-align: center; margin: 10px; border: 1px solid #ccc; padding: 20px;">
+                <img src="img/fotoprojetoprontoled.jpg" alt="segundo passo" style="display: block; margin: 0 auto; width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                <h3 class="titulo">Testando com LED e LCD</h3>
+                <p>Usando LEDS e Tela LCD para informar o nível da água.</p>
+            </div>
+        </div><!--container-->
+    </section><!--diferenciais-->
+    
+    <section class="descricao-projeto">
+        <div class="container">
+            <h2>Descrição do Projeto</h2>
+            <div class="descricao-item">
+                <h3>> Motivação</h3>
+                <p>Este projeto é importante porque busca solucionar um problema comum em muitas residências: a falta de água em reservatórios. Com o aumento da demanda por água e os períodos de seca, é crucial garantir que os reservatórios sejam monitorados adequadamente.</p>
+            </div>
+            <div class="descricao-item">
+                <h3>> Objetivo</h3>
+                <p>O objetivo do projeto é desenvolver um protótipo utilizando Arduino que monitore o nível da água em tempo real e notifique o usuário quando os níveis estiverem baixos, prevenindo situações de desabastecimento.</p>
+            </div>
+            <div class="descricao-item">
+                <h3>> Contextualização</h3>
+                <p>Este projeto foi desenvolvido por estudantes no laboratório de Sistemas Digitais, utilizando Arduino para criar soluções práticas e inovadoras para o cotidiano.</p>
+            </div>
+        </div><!--container-->
+    </section><!--descrição-->
+    
+    <section class="esquema-conceitual">
+        <div class="container">
+            <h2>Esquema Conceitual</h2>
+            <p>Abaixo está o esquema conceitual do artefato interativo, que ilustra como os componentes se interconectam e funcionam em conjunto.</p>
+            <div class="esquema-imagem" id="esquemaContainer">
+                <img src="img/esquemaconceitualsd.jpg" alt="Esquema Conceitual" class="esquema-img" style="max-width: 100%; height: auto;">
+            </div>
+        </div><!--container-->
+    </section><!--esquema-conceitual-->      
+    
+    <section class="utilizados descricao-projeto">
+        <div class="container">
+            <div class="palavras-chaves descricao-item">
+                <h3>> Palavras-chave</h3>
+                <p>Prótotipo - Nivelamento - Água - Reservatório - LED - Tela - Arduino</p>
+            </div>
+            <div class="app-plataformas descricao-item">
+                <h3>> Aplicativos e plataformas utilizados</h3>
+                <p>Youtube - Arduino - Canva - VScode</p>
+            </div><!-- app-plataformas -->
+        </div><!-- container -->
+    </section><!-- utilizados --> 
+    <section class="problemas-e-licoes">
+        <div class="container">
+            <h2>Problemas enfrentados e lições aprendidas</h2>
+            
+            <div class="descricao-item">
+                <h3>> Principais Desafios</h3>
+                <p>
+                    Durante o desenvolvimento do projeto, a equipe enfrentou alguns desafios, incluindo dificuldades na configuração do sensor de nível e problemas de comunicação entre o Arduino e os outros componentes. <br><br>
+                    <strong>O que deu errado?</strong><br>
+                    Em várias ocasiões, o sensor não respondia de forma consistente aos níveis de água.<br><br>
+                    <strong>Como foi resolvido?</strong><br>
+                   Adicionamos um resistor para estabilizar a alimentação, o que melhorou a comunicação e o funcionamento geral do sistema.
+                </p>
+            </div>
+    
+            <div class="descricao-item">
+                <h3>> Lições Aprendidas</h3>
+                <p>
+                    A equipe aprendeu a importância de testes empíricos e da escolha de componentes funcionais. Além disso, entendemos que a documentação clara e detalhada do processo ajuda na solução de problemas futuros e facilita o aprendizado de novos membros.
+                </p>
+            </div>
+        </div><!-- container -->
+    </section><!-- problemas-e-licoes -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Medidor de nível da caixa d'água</h3>
+                <p>Desenvolvido por estudantes do laboratório de Sistemas Digitais.</p>
+                <p>Uma solução inovadora para monitoramento de reservatórios.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Projeto SD/IC. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const footer = document.querySelector('footer');
+
+        footer.addEventListener('mouseover', () => {
+            footer.style.backgroundColor = '#aaaaaa'; 
+            footer.style.transform = 'scale(1.02)'; 
+            footer.querySelector('h3').style.transform = 'scale(1.1)'; 
+            footer.querySelectorAll('p').forEach(p => {
+                p.style.transform = 'scale(1.05)'; 
+            });
+        });
+
+        footer.addEventListener('mouseout', () => {
+            footer.style.backgroundColor = '#555555'; 
+            footer.style.transform = 'scale(1)'; 
+            footer.querySelector('h3').style.transform = 'scale(1)'; 
+            footer.querySelectorAll('p').forEach(p => {
+                p.style.transform = 'scale(1)'; 
+            });
+        });
+    </script>
+</body>
+</html>

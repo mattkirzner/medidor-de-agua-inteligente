@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Entre em contato</title>
+    <style>
+        .shadow-cursor {
+            position: absolute;
+            width: 10px; 
+            height: 10px; 
+            background-color: rgba(255, 255, 255, 0.842); 
+            border-radius: 50%; 
+            pointer-events: none; 
+            transition: transform 0.1s ease; 
+            filter: blur(3px); 
+            z-index: 9999; 
+        }
+
+        footer {
+            background-color: #282c34; 
+            color: #ffffff; 
+            padding: 40px 0; 
+            text-align: center; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+
+        footer:hover {
+            background-color: #3a3f47; 
+            transform: scale(1.02); 
+        }
+
+        .footer-content h3 {
+            font-size: 1.5em; 
+            margin-bottom: 10px; 
+            transition: transform 0.3s ease; 
+        }
+
+        footer:hover .footer-content h3 {
+            transform: scale(1.1); 
+        }
+
+        .footer-content p {
+            font-size: 1em; 
+            margin: 5px 0; 
+            transition: transform 0.3s ease; 
+        }
+
+        footer:hover .footer-content p {
+            transform: scale(1.05); 
+        }
+
+        .footer-bottom {
+            margin-top: 20px; 
+            font-size: 0.9em; 
+            color: rgba(255, 255, 255, 0.7); 
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shadow-cursor" id="shadowCursor"></div>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">Projeto SD/IC</a>
+                    </div>
+                    <ul class="ul">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="autores.html">Autores</a></li>
+                        <li><a href="manual.html">Manual</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="#"><button class="btn-gradiente">Vídeo tutorial</button></a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <img src="img/menuicon.png" style="width: 70px; height: auto;" alt="ícone menu">
+                    </div>
+                </nav>
+            </div><!--container-->
+        </header><!--header-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2>Entre em contato</h2>
+                <form id="contactForm" action="">
+                    <input type="text" id="name" placeholder="Seu nome:" required>
+                    <input type="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="tel" id="phone" placeholder="Seu celular:">
+                    <textarea id="message" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+                <div id="responseMessage" style="display: none;"></div> <!-- Mensagem de resposta -->
+            </div><!--interface-->
+        </section><!--formulario-->
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Medidor de nível da caixa d'água</h3>
+                    <p>Desenvolvido por estudantes do laboratório de Sistemas Digitais.</p>
+                    <p>Uma solução inovadora para monitoramento de reservatórios.</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Projeto SD/IC. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        <!--js-->
+        <script>
+            const footer = document.querySelector('footer');
+    
+            footer.addEventListener('mouseover', () => {
+                footer.style.backgroundColor = '#aaaaaa'; 
+                footer.style.transform = 'scale(1.02)'; 
+                footer.querySelector('h3').style.transform = 'scale(1.1)'; 
+                footer.querySelectorAll('p').forEach(p => {
+                    p.style.transform = 'scale(1.05)'; 
+                });
+            });
+    
+            footer.addEventListener('mouseout', () => {
+                footer.style.backgroundColor = '#555555'; 
+                footer.style.transform = 'scale(1)'; 
+                footer.querySelector('h3').style.transform = 'scale(1)'; 
+                footer.querySelectorAll('p').forEach(p => {
+                    p.style.transform = 'scale(1)'; 
+                });
+            });
+        </script>
+    </body>
+    </html>
